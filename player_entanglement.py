@@ -1,3 +1,14 @@
+'''
+ * @file    monte_carlo_pi.cpp
+ * @author  Fabian Farina
+ * @date    12/2/2021
+ * @version 1.1
+ 
+ * In this program the decision space of a quantum game with two 
+ * entangled players gets calculated. This can be used as an input
+ * for evolutionary quantum games (on a graph). Comments are german,
+ * which will be changed in the future
+'''
 # coding=utf-8
 import random as rnd
 import numpy as np
@@ -19,7 +30,6 @@ def round_complex(x,precision=0):
     return complex(round(x.real,precision),round(x.imag,precision))
 
 def entangle(tauA,tauB,gamma):
-    
     # Den tau werden ihre Entscheidungswinkel (theta, phi) zugeordnet.
     # Klassische Strategien liegen zwischen 0 <= tau <= 1
     # und Quantenstrategien zwischen       -1 <= tau <  0
